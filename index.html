@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
-      </header>
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
-        </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script>
+    src = "https://kit.fontawesome.com/3da1a747b2.js"
+    crossorigin = "anonymous"
+  </script>
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Password Generator</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <h2>Password Generator</h2>
+    <div class="result-container">
+      <span id="result"></span>
+
+      <button class="btn" id="clipboard">
+        <i class="far fa-clipboard"></i>
+      </button>
+    </div>
+    <div class="settings">
+      <div class="setting">
+        <label>How long do you want it ??</label>
+        <input type="number" id="length" min='8' max='128' value='69' />
+      </div>
+      <div class="setting">
+        <label>Do you need any numbers ??</label>
+        <input type="checkbox" id="uppercase" checked />
+      </div>
+      <div class="setting">
+        <label>How about something special? </label>
+        <input type="checkbox" id="lowercase" checked />
+      </div>
+      <div class="setting">
+        <label>How about downners??</label>
+        <input type="checkbox" id="numbers" checked />
+      </div>
+      <div class="setting">
+        <label>Maybe uppers ??</label>
+        <input type="checkbox" id="symbols" checked />
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+    <button class="btn btn-large" id="generate">
+      Generate password
+    </button>
+  </div>
+
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
 </html>
