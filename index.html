@@ -5,11 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <script>
-    src = "https://kit.fontawesome.com/3da1a747b2.js"
-    crossorigin = "anonymous"
-  </script>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
   <title>Password Generator</title>
 
@@ -27,23 +24,23 @@
     </div>
     <div class="settings">
       <div class="setting">
-        <label>How long do you want it ??</label>
-        <input type="number" id="length" min='8' max='128' value='69' />
+        <label>how many characters 8-128</label>
+        <input type="number" id="length" min='8' max='128' value='8' />
       </div>
       <div class="setting">
         <label>Do you need any numbers ??</label>
         <input type="checkbox" id="uppercase" checked />
       </div>
       <div class="setting">
-        <label>How about something special? </label>
+        <label>would you like to use special characters? </label>
         <input type="checkbox" id="lowercase" checked />
       </div>
       <div class="setting">
-        <label>How about downners??</label>
+        <label>lower case??</label>
         <input type="checkbox" id="numbers" checked />
       </div>
       <div class="setting">
-        <label>Maybe uppers ??</label>
+        <label>upper case ??</label>
         <input type="checkbox" id="symbols" checked />
       </div>
     </div>
